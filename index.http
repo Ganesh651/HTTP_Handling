@@ -1,0 +1,24 @@
+GET http://localhost:4000/
+###
+GET http://localhost:4000/todo/2
+###
+PUT  http://localhost:4000/todo/8
+Content-Type: application/json
+
+{    
+    "status" : "TO DO"
+}
+###
+
+POST http://localhost:4000/
+Content-Type: application/json
+
+{
+    "id": 9,
+    "todo": "Express",
+    "priority": "HIGH",
+    "status": "DONE"
+}
+###
+DELETE http://localhost:4000/todo/2
+
